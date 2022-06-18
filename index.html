@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8">
+    <title>Matthew</title>
+</head>
+<body>
+    <div class = "background">          
+        <br>
+        <h1 class = "himatthew"> Hi Matthew! </h1>  
+        <br>
+        <div class = "randmsg">
+        <script>
+            var msg;
+            var random = Math.floor(Math.random() * 8) + 1;
+            if (random == 1) {
+                msg = "Hey Matthew! You may be stressed and nervous rn, but know that we're all here rooting for you!!";
+            }
+            else if (random == 2) {
+                msg = "Matthew!!! You got this!! Even though your problem isn't a Dalton, I'm sure you'll kick it in the butt!! <3";
+            }
+            else if (random == 3) {
+                msg = "Ahh Matthew! Ik things are super rough, and not the best rn, but no matter what, we'll be here to try to pick you up if you need it!";
+            }  
+            else if (random == 4) {
+                msg = "Matthew, you are an absolute champ!! ^^ You're one of the smartest people ik, and you have a heart of gold!";
+            }  
+            else if (random == 5) {
+                msg = "Matthew, you're the biggest reason I like district 3 ^^";
+            }  
+            else if (random == 6) {
+                msg = "Matthew, you're one of the most kindhearted, honest, and talented people ik. God is trying to nerf you rn because of how incredible you are- but even then, you still shine brighter than the stars ^^";
+            }    
+            else if (random == 7) {
+                msg = "Matthew, you are one of the closest friends I have- you're helpful, fun, and a wonderful person to be around!";
+            }
+            else {
+                msg = "OMEGA WAS ROBBED SMH";
+            }
+           // document.getElementById('message').value = msg;
+           document.write(msg);
+        </script>
+        <br>
+        <br>
+        </div>
+        <p class = "datetime"><b>Current date and time is: <span id = 'date-time'></span></b></p>
+         <script>
+            var dt = new Date();
+            document.getElementById('date-time').innerHTML=dt;
+            </script>
+    </div>
+</body>
+</html>
+<!--
+                else if (random == 3) {
+                msg = "Ahh Matthew! Ik things are super rough, and not the best rn, but no matter what, we'll be here to try to pick you up if you need it!";
+            }
+            else if (random == 4) {
+                msg = "Matthew, you are an absolute champ!! ^^ You're one of the smartest people ik, and you have a heart of gold!";
+            }
+            else if (random == 5) {
+                msg = "Matthew, you're the biggest reason I like district 3 ^^";
+            }
+            else if (random == 6) {
+                msg = "Matthew, you're one of the most kindhearted, honest, and talented people ik. God is trying to nerf you rn because of how incredible you are- but even then, you still shine brighter than the stars ^^";
+            }
+-->
