@@ -35,10 +35,28 @@
                 msg = "The losers who put you down don't deserve you. Don't give them time and thought. Just move on.";
             }  
             else if (random == 7) {
-                msg = "Josh is a professional civ player";
+                var winmethod;
+                var random2 = Math.floor(Math.random() * 5) + 1;
+
+                if(random2 == 1) {
+                    winmethod = "Science";
+                }
+                else if(random2 == 2) {
+                    winmethod = "Culture";
+                }
+                else if(random2 == 3) {
+                    winmethod = "Domination";
+                }
+                else if(random2 == 4) {
+                    winmethod = "Religious";
+                }
+                else if(random2 == 5) {
+                    winmethod = "Diplomatic";
+                }
+                msg = "Time for another civ game, win with a " + winmethod + " victory.";
             }
             else if (random == 8) {
-                msg = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+                msg = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
             }   
             else if (random == 9) {
                 msg = "You need oreos rn fr";
@@ -49,23 +67,40 @@
             else {
                 msg = "A duck walked up to the lemonade stand";
             }
-           // document.getElementById('message').value = msg;
            document.write(msg);
         </script>
-        <br>
-        <br>
         </div>
         <p class="datetime"><b>Current date and time is: <span id='date-time'></span></b></p>
 
         <script>
-            function updateDateTime() {
+          function updateDateTime() {
             var dt = new Date();
-            document.getElementById('date-time').innerHTML = dt.toLocaleString();
-            }
-            setInterval(updateDateTime, 1000);
-
-            updateDateTime();
+            
+            var options = {
+              day: '2-digit',
+              month: '2-digit',
+              year: 'numeric',
+              hour: 'numeric',
+              minute: 'numeric',
+              second: 'numeric',
+              hour12: false,
+            };
+      
+            document.getElementById('date-time').innerHTML = dt.toLocaleString('en-UK', options);
+          }
+      
+          // Update every second (1000 milliseconds)
+          setInterval(updateDateTime, 1000);
+      
+          // Initial update
+          updateDateTime();
         </script>
+
+        <h3>Links:</h3>
+        <a href = "https://github.com/Matthew-Adlam" class = "link">Github</a>
+        <a href = "https://google.com" class = "link">Google</a>
+        <a href = "https://drive.google.com/drive/u/0/" class = "link">Drive</a>
+        <a href = "https://calendar.google.com/calendar/u/0/r?pli=1" class = "link">Calendar</a>
     </div>
 </body>
 </html>
