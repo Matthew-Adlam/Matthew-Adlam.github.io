@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="mumstyle.css" type="text/css" charset="utf-8">
     <title>Matthew</title>
 </head>
 <body>
@@ -17,56 +17,29 @@
             var msg;
             var random = Math.floor(Math.random() * 11) + 1;
             if (random == 1) {
-                msg = "Do your assigments you moron.";
+                msg = "Every day is a new day.";
             }
             else if (random == 2) {
-                msg = "Actually be optimistic.";
+                msg = "Who do you want in the all star season?.";
             }
             else if (random == 3) {
-                msg = "Pat Harry.";
+                msg = "You did well.";
             }  
             else if (random == 4) {
                 msg = "You are good enough.";
             }  
             else if (random == 5) {
-                msg = "You can't change the past, but you can move on and make the future better.";
+                msg = "Feed Harry.";
             }  
             else if (random == 6) {
-                msg = "The losers who put you down don't deserve you. Don't give them time and thought. Just move on.";
+                msg = "Shonee 5th season coming up?";
             }  
             else if (random == 7) {
-                var winmethod;
-                var random2 = Math.floor(Math.random() * 5) + 1;
-
-                if(random2 == 1) {
-                    winmethod = "Science";
-                }
-                else if(random2 == 2) {
-                    winmethod = "Culture";
-                }
-                else if(random2 == 3) {
-                    winmethod = "Domination";
-                }
-                else if(random2 == 4) {
-                    winmethod = "Religious";
-                }
-                else if(random2 == 5) {
-                    winmethod = "Diplomatic";
-                }
-                msg = "Time for another civ game, win with a " + winmethod + " victory.";
+                msg = "Meow."
             }
             else if (random == 8) {
-                msg = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+                msg = "Mary and Lydia were insignificant.";
             }   
-            else if (random == 9) {
-                msg = "You need oreos rn fr";
-            }   
-            else if (random == 10) {
-                msg = "Hang in there. Things will get better.";
-            } 
-            else {
-                msg = "A duck walked up to the lemonade stand";
-            }
            document.write(msg);
         </script>
         </div>
@@ -97,10 +70,15 @@
         </script>
 
         <h3>Links:</h3>
-        <a href = "https://github.com/Matthew-Adlam" class = "link">Github</a>
-        <a href = "https://google.com" class = "link">Google</a>
-        <a href = "https://drive.google.com/drive/u/0/" class = "link">Drive</a>
-        <a href = "https://calendar.google.com/calendar/u/0/r?pli=1" class = "link">Calendar</a>
+        <a href = "https://www.facebook.com/" class = "link">Facebook</a>
+        <a href = "https://www.tvnz.co.nz/" class = "link">TVNZ</a>
+        <a href = "https://www.trademe.co.nz/a/" class = "link">TradeMe</a>
     </div>
+
+    <script>
+        const images = ['harry1.jpg', 'harry2.jpg'];
+        const random = images[Math.floor(Math.random() * images.length)];
+        document.querySelector('.background').style.backgroundImage = `url('${random}')`;
+    </script>
 </body>
 </html>
