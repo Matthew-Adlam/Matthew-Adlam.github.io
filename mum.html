@@ -10,17 +10,17 @@
 <body>
     <div class = "background">          
         <br>
-        <h1 class = "himatthew"> Hi Mum! </h1>  
+        <h1 class = "himum"> Hi Mum! </h1>  
         <br>
         <div class = "randmsg">
         <script>
             var msg;
-            var random = Math.floor(Math.random() * 11) + 1;
+            var random = Math.floor(Math.random() * 12) + 1;
             if (random == 1) {
                 msg = "Every day is a new day.";
             }
             else if (random == 2) {
-                msg = "Who do you want in the all star season?.";
+                msg = "Who do you want in the all star season?";
             }
             else if (random == 3) {
                 msg = "You did well.";
@@ -39,7 +39,19 @@
             }
             else if (random == 8) {
                 msg = "Mary and Lydia were insignificant.";
+            }
+            else if (random == 9) {
+                msg = "its me harry. i want attention."
             }   
+            else if (random == 10) {
+                msg = "Don't give up."
+            }
+            else if (random == 11) {
+                msg = "Pizza tonight."
+            }
+            else if (random == 12) {
+                msg = "Was Jackson robbed?"
+            }
            document.write(msg);
         </script>
         </div>
@@ -73,12 +85,13 @@
         <a href = "https://www.facebook.com/" class = "link">Facebook</a>
         <a href = "https://www.tvnz.co.nz/" class = "link">TVNZ</a>
         <a href = "https://www.trademe.co.nz/a/" class = "link">TradeMe</a>
+        <a href = "https://www.metservice.com/" class="link">MetService</a>
     </div>
 
     <script>
-        const images = ['harry1.jpg', 'harry2.jpg'];
-        const random = images[Math.floor(Math.random() * images.length)];
-        document.querySelector('.background').style.backgroundImage = `url('${random}')`;
+        const images = ['images/harry1.jpg', 'images/harry2.jpg'];
+        const random1 = images[Math.floor(Math.random() * images.length)];
+        document.querySelector('.background').style.backgroundImage = `url('${random1}')`;
     </script>
 </body>
 </html>
