@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mumstyle.css" type="text/css" charset="utf-8">
-    <title>Matthew</title>
+    <title>Mum</title>
 </head>
 <body>
     <div class = "background">          
@@ -15,43 +15,14 @@
         <div class = "randmsg">
         <script>
             var msg;
-            var random = Math.floor(Math.random() * 12) + 1;
-            if (random == 1) {
-                msg = "Every day is a new day.";
-            }
-            else if (random == 2) {
-                msg = "Who do you want in the all star season?";
-            }
-            else if (random == 3) {
-                msg = "You did well.";
-            }  
-            else if (random == 4) {
-                msg = "You are good enough.";
-            }  
-            else if (random == 5) {
-                msg = "Feed Harry.";
-            }  
-            else if (random == 6) {
-                msg = "Shonee 5th season coming up?";
-            }  
-            else if (random == 7) {
-                msg = "Meow."
-            }
-            else if (random == 8) {
-                msg = "Mary and Lydia were insignificant.";
-            }
-            else if (random == 9) {
-                msg = "its me harry. i want attention."
-            }   
-            else if (random == 10) {
-                msg = "Don't give up."
-            }
-            else if (random == 11) {
-                msg = "Pizza tonight."
-            }
-            else if (random == 12) {
-                msg = "Was Jackson robbed?"
-            }
+            msgList = ["Every day is a new day.","Who do you want in the all star season?","You did well.","You are good enough.",
+            "Feed Harry.","Shonee 5th season coming up?","Meow.","Mary and Lydia were insignificant.","its me harry. i want attention.",
+            "Don't give up.","Pizza tonight.","Was Jackson robbed?","Amazing Race plot twists aren't bad","Kitty ran off with Wickham",
+            "Snape was not the hero","November 2026 is Haymitch Torture Simulator","Gamble like Wyatt in the lottery?","Was Maysilee robbed?",
+            "Who was the greatest survivor to not win, besides George?","Who was the most overrated survivor player?","Wickham was the real villain",
+            "Buy Harry Jimbos.","Buy Harry Temptations."]
+            var random = Math.floor(Math.random() * msgList.length);
+            msg = msgList[random] 
            document.write(msg);
         </script>
         </div>
@@ -79,17 +50,22 @@
       
           // Initial update
           updateDateTime();
+          if (Math.random() < 0.1) {
+            alert("ATTENTION SEEKING")
+          }
         </script>
 
-        <h3>Links:</h3>
-        <a href = "https://www.facebook.com/" class = "link">Facebook</a>
-        <a href = "https://www.tvnz.co.nz/" class = "link">TVNZ</a>
-        <a href = "https://www.trademe.co.nz/a/" class = "link">TradeMe</a>
-        <a href = "https://www.metservice.com/" class="link">MetService</a>
+        <nav class="links">
+            <a href = "https://www.facebook.com/" class = "link">Facebook</a>
+            <a href = "https://www.tvnz.co.nz/" class = "link">TVNZ</a>
+            <a href = "https://www.trademe.co.nz/a/" class = "link">TradeMe</a>
+            <a href = "https://www.metservice.com/" class="link">MetService</a>
+            <a href = "https://mail.google.com/mail" class="link">Gmail</a>
+        </nav>
     </div>
 
     <script>
-        const images = ['images/harry1.jpg', 'images/harry2.jpg'];
+        const images = ['images/harry1.jpg', 'images/harry2.jpg','images/harry3.jpeg'];
         const random1 = images[Math.floor(Math.random() * images.length)];
         document.querySelector('.background').style.backgroundImage = `url('${random1}')`;
     </script>
